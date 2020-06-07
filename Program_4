@@ -1,0 +1,16 @@
+l = []
+
+n=int(input("Input the no. of elements: "))
+for i in range(n):
+    a=int(input("Enter the element "+str(i)+": "))
+    l.append(a)
+print("Input list is: "+str(l))
+
+p = []
+for i in range(n):
+    if l[i]>0:
+        p.append(l[i])
+
+print("Positive numbers are: ")
+for i in range(len(p)):
+    print(p[i],end=" ")
