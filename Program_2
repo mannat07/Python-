@@ -1,0 +1,5 @@
+dictionary={'py':"python",'js':"javascript",'txt':"text",'php':"PHP",\
+            'html':"HTML",'css':"Cascading Style Sheet",'exe':"Executable File"}
+filename=input("Input the filename: ")
+ext=filename.split(".")
+print("The extension of the file is: "+dictionary[ext[-1]])
