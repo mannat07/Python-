@@ -1,0 +1,17 @@
+def most_frequent(s):
+    d={}
+    for i in range(len(s)):
+        if s[i] not in d:
+            d[s[i]]=1
+        else:
+            d[s[i]]+=1
+    l=[]
+    for k,v in list(d.items()):
+        l.append((v,k))
+    l.sort(reverse=True)
+    for v,k in l:
+        print(str(k)+" = "+str(v))
+        
+        
+s=input("Enter a string: ")
+most_frequent(s)
